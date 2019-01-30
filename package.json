@@ -1,0 +1,41 @@
+{
+  "name": "react-group-3",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "json-server": "^0.14.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-lazy": "^1.0.3",
+    "react-redux": "^6.0.0",
+    "react-scripts": "2.1.1",
+    "react-sortable-hoc": "^1.4.0",
+    "react-transition-group": "^2.5.3",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "shortid": "^2.2.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch --port 3099 src/redux/server/db.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.7"
+  }
+}
