@@ -1,7 +1,5 @@
 import {
   ADD_SUCCESS,
-  EDIT_START_SUCCES,
-  EDIT_SUCCESS,
   DELETE_SUCCESS,
   CHANGE_FILTER,
   CHANGE_CONTACT_POSITION,
@@ -24,16 +22,6 @@ const addContactSuccess = contact => ({
 const deleteContactSuccess = id => ({
   type: DELETE_SUCCESS,
   payload: id,
-});
-
-const editContactStartSuccess = id => ({
-  type: EDIT_START_SUCCES,
-  payload: id,
-});
-
-const editContactSuccess = payload => ({
-  type: EDIT_SUCCESS,
-  payload,
 });
 
 const changeContactPosition = ({ oldIndex, newIndex }) => ({
@@ -63,8 +51,6 @@ const fetchError = error => ({
 
 export {
   addContactSuccess,
-  editContactStartSuccess,
-  editContactSuccess,
   deleteContactSuccess,
   changeContactPosition,
   filterContact,

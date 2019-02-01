@@ -6,16 +6,16 @@ const Contact = SortableElement(
   ({ login, avatar_url, html_url, onEdit, onDelete }) => (
     <div className={s.container}>
       <h4>{login}</h4>
-      <img width="100" heigth="100" src={avatar_url} alt={login} />
+
       <a href={html_url} className={s.text} target="blank">
-        {html_url}
+        <img src={avatar_url} alt={login} className={s.img} />
       </a>
 
       <hr />
       <footer className={s.footer}>
-        <button className={s.button} onClick={onEdit}>
+        {/* <button className={s.button} onClick={onEdit}>
           Edit
-        </button>
+        </button> */}
         <button className={s.button} onClick={onDelete}>
           Delete
         </button>

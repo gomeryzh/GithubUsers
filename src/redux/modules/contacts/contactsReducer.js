@@ -13,13 +13,6 @@ function contactsReducer(state = [], { type, payload }) {
     case types.SET_NEW_ORDER:
       return payload;
 
-    case types.EDIT_START_SUCCES:
-      return payload;
-
-    case types.EDIT_SUCCESS:
-      return state.map(item =>
-        item.id === payload ? { ...item, name: item.name } : item,
-      );
     default:
       return state;
   }

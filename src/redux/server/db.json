@@ -22,27 +22,6 @@
       "url": "https://api.github.com/users/PhannGor"
     },
     {
-      "avatar_url": "https://avatars2.githubusercontent.com/u/13534787?v=4",
-      "events_url": "https://api.github.com/users/alex-storozhenko/events{/privacy}",
-      "followers_url": "https://api.github.com/users/alex-storozhenko/followers",
-      "following_url": "https://api.github.com/users/alex-storozhenko/following{/other_user}",
-      "gists_url": "https://api.github.com/users/alex-storozhenko/gists{/gist_id}",
-      "gravatar_id": "",
-      "html_url": "https://github.com/alex-storozhenko",
-      "id": 13534787,
-      "login": "alex-storozhenko",
-      "node_id": "MDQ6VXNlcjEzNTM0Nzg3",
-      "organizations_url": "https://api.github.com/users/alex-storozhenko/orgs",
-      "received_events_url": "https://api.github.com/users/alex-storozhenko/received_events",
-      "repos_url": "https://api.github.com/users/alex-storozhenko/repos",
-      "score": 1,
-      "site_admin": false,
-      "starred_url": "https://api.github.com/users/alex-storozhenko/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/alex-storozhenko/subscriptions",
-      "type": "User",
-      "url": "https://api.github.com/users/alex-storozhenko"
-    },
-    {
       "avatar_url": "https://avatars1.githubusercontent.com/u/3888040?v=4",
       "events_url": "https://api.github.com/users/YanDatsyuk/events{/privacy}",
       "followers_url": "https://api.github.com/users/YanDatsyuk/followers",

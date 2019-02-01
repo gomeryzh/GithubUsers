@@ -5,16 +5,16 @@ import {
   fetchError,
   addContactSuccess,
   deleteContactSuccess,
-  editContactStartSuccess,
-  editContactSuccess,
 } from './contactsActions';
 
 export const fetchContacts = () => async dispatch => {
   dispatch(fetchRequest());
 
   try {
-    const response = await axios.get('http://localhost:3099/contacts');
-    dispatch(fetchSuccess(response.data));
+    const resp = await axios.get(
+      'https://api.github.com/search/users?q=location:uzhgorod+followers:A>5',
+    );
+    dispatch(fetchSuccess(resp.data.items));
   } catch (error) {
     dispatch(fetchError(error));
   }
@@ -41,28 +41,6 @@ export const deleteContact = id => async dispatch => {
   try {
     await axios.delete(`http://localhost:3099/contacts/${id}`);
     dispatch(deleteContactSuccess(id));
-  } catch (error) {
-    dispatch(fetchError(error));
-  }
-};
-
-export const editContactStart = id => async dispatch => {
-  dispatch(fetchRequest());
-
-  try {
-    axios.get(`http://localhost:3099/contacts/${id}`);
-    dispatch(editContactStartSuccess(id));
-  } catch (error) {
-    dispatch(fetchError(error));
-  }
-};
-
-export const editContact = id => async dispatch => {
-  dispatch(fetchRequest());
-
-  try {
-    axios.patch(`http://localhost:3099/contacts/${id}`);
-    dispatch(editContactSuccess(id));
   } catch (error) {
     dispatch(fetchError(error));
   }

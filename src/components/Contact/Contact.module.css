@@ -9,6 +9,11 @@
   flex: 0 0 calc(33.3333% - 16px);
   background-color: #fff;
 }
+.img {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
 .footer {
   display: flex;
   justify-content: space-between;
