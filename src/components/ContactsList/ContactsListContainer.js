@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import ContactsList from './ContactsList';
-import { setNewOrder } from '../../redux/modules/contacts/contactsActions';
 import { filteredContacts } from '../../redux/modules/contacts/contactsSelector';
 import {
   fetchContacts,
@@ -28,7 +27,6 @@ const mapDispatch = {
   fetchContacts,
   addContact,
   deleteContact,
-  setNewOrder,
 };
 
 export default connect(

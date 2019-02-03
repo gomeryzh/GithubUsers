@@ -10,9 +10,6 @@ function contactsReducer(state = [], { type, payload }) {
     case types.DELETE_SUCCESS:
       return state.filter(item => item.id !== payload);
 
-    case types.SET_NEW_ORDER:
-      return payload;
-
     default:
       return state;
   }
